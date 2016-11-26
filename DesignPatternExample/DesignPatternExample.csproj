@@ -40,6 +40,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FactoryMethod\AddFactory.cs" />
+    <Compile Include="FactoryMethod\DivFactory.cs" />
+    <Compile Include="FactoryMethod\MulFactory.cs" />
+    <Compile Include="FactoryMethod\Operation.cs" />
+    <Compile Include="FactoryMethod\OperationAdd.cs" />
+    <Compile Include="FactoryMethod\OperationDiv.cs" />
+    <Compile Include="FactoryMethod\OperationMul.cs" />
+    <Compile Include="FactoryMethod\OperationSub.cs" />
+    <Compile Include="FactoryMethod\SubFactory.cs" />
+    <Compile Include="Strategy\CashContext.cs" />
+    <Compile Include="Strategy\CashNormal.cs" />
+    <Compile Include="Strategy\CashRebate.cs" />
+    <Compile Include="Strategy\CashReturn.cs" />
+    <Compile Include="Strategy\CashSuper.cs" />
+    <Compile Include="FactoryMethod\IFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SimpleFactory\Operation.cs" />
     <Compile Include="SimpleFactory\OperationAdd.cs" />
