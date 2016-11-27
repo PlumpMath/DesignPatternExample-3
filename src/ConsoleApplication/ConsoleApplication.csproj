@@ -4,15 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D0795834-D23D-48AD-8C39-926E80494DE9}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{192198D3-B8C5-49C7-BE23-60430C83472A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DesignPatternExample</RootNamespace>
-    <AssemblyName>DesignPatternExample</AssemblyName>
+    <RootNamespace>ConsoleApplication</RootNamespace>
+    <AssemblyName>ConsoleApplication</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -40,37 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Decorator\BigTrouser.cs" />
-    <Compile Include="Decorator\Finery.cs" />
-    <Compile Include="Decorator\LeatherShoes.cs" />
-    <Compile Include="Decorator\Person.cs" />
-    <Compile Include="Decorator\Sneakers.cs" />
-    <Compile Include="Decorator\Suit.cs" />
-    <Compile Include="Decorator\Tie.cs" />
-    <Compile Include="Decorator\TShirts.cs" />
-    <Compile Include="FactoryMethod\AddFactory.cs" />
-    <Compile Include="FactoryMethod\DivFactory.cs" />
-    <Compile Include="FactoryMethod\MulFactory.cs" />
-    <Compile Include="FactoryMethod\Operation.cs" />
-    <Compile Include="FactoryMethod\OperationAdd.cs" />
-    <Compile Include="FactoryMethod\OperationDiv.cs" />
-    <Compile Include="FactoryMethod\OperationMul.cs" />
-    <Compile Include="FactoryMethod\OperationSub.cs" />
-    <Compile Include="FactoryMethod\SubFactory.cs" />
-    <Compile Include="Strategy\CashContext.cs" />
-    <Compile Include="Strategy\CashNormal.cs" />
-    <Compile Include="Strategy\CashRebate.cs" />
-    <Compile Include="Strategy\CashReturn.cs" />
-    <Compile Include="Strategy\CashSuper.cs" />
-    <Compile Include="FactoryMethod\IFactory.cs" />
+    <Compile Include="Decorator.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SimpleFactory\Operation.cs" />
-    <Compile Include="SimpleFactory\OperationAdd.cs" />
-    <Compile Include="SimpleFactory\OperationDiv.cs" />
-    <Compile Include="SimpleFactory\OperationFactory.cs" />
-    <Compile Include="SimpleFactory\OperationMul.cs" />
-    <Compile Include="SimpleFactory\OperationSub.cs" />
-    <Compile Include="SimpleFactory\OperationType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DesignPatternExample\DesignPatternExample.csproj">
+      <Project>{d0795834-d23d-48ad-8c39-926e80494de9}</Project>
+      <Name>DesignPatternExample</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
