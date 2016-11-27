@@ -11,19 +11,20 @@ namespace ConsoleApplication
         static void Main(string[] args)
         {
             Console.WriteLine("\n装饰模式----------------\n");
-
             DecorateTester decorateTest = new DecorateTester();
             decorateTest.Run();
 
             Console.WriteLine("\n代理模式----------------\n");
-
             ProxyTester proxyTester = new ProxyTester();
             proxyTester.Run();
 
             Console.WriteLine("\n原型模式----------------\n");
-
             PrototypeTester prototypeTester = new PrototypeTester();
             prototypeTester.Run();
+
+            Console.WriteLine("\n抽象工厂模式----------------\n");
+            AbstractFactoryTester abstractFactoryTester = new AbstractFactoryTester();
+            abstractFactoryTester.Run();
 
             Console.Read();
         }
