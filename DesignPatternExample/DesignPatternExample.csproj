@@ -40,6 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Agent\Girl.cs" />
+    <Compile Include="Agent\IGiveGift.cs" />
+    <Compile Include="Agent\Proxy.cs" />
+    <Compile Include="Agent\Pursuit.cs" />
     <Compile Include="Decorator\BigTrouser.cs" />
     <Compile Include="Decorator\Finery.cs" />
     <Compile Include="Decorator\LeatherShoes.cs" />
@@ -57,6 +61,8 @@
     <Compile Include="FactoryMethod\OperationMul.cs" />
     <Compile Include="FactoryMethod\OperationSub.cs" />
     <Compile Include="FactoryMethod\SubFactory.cs" />
+    <Compile Include="Prototype\Resume.cs" />
+    <Compile Include="Prototype\WorkExperience.cs" />
     <Compile Include="Strategy\CashContext.cs" />
     <Compile Include="Strategy\CashNormal.cs" />
     <Compile Include="Strategy\CashRebate.cs" />
